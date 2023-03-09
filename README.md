@@ -42,9 +42,6 @@ Initially use the `55` StarFive Debian OS image: [starfive-jh7110-VF2-VF2_515_v2
 Use [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/) to flash the above Debian OS image to the SD card.
 (The Balena Etcher did not work for me)
 
-For reference, here are [all the OS images](https://drive.google.com/drive/folders/1yhMVrB05wSjcqbrxgW2nXJNOeSC3ViRx) and
-the [main Debian StarFive page](https://debian.starfivetech.com/).
-
 ## Hardware connections
 
 - Connect an ethernet cable to one of the board's ethernet connectors.
@@ -82,4 +79,12 @@ Password: starfive
 
 # References
 
+## Websites
+
 [StarFive VisionFive 2 High Performance RISC-V SBC Review by James Chambers](https://jamesachambers.com/starfive-visionfive2-review/)
+
+## OSs
+
+[Debian OS images](https://drive.google.com/drive/folders/1yhMVrB05wSjcqbrxgW2nXJNOeSC3ViRx)
+
+[Main Debian StarFive page](https://debian.starfivetech.com/)
