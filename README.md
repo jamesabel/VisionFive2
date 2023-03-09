@@ -20,6 +20,11 @@ My journey with the VisionFive 2 open source quad-core RISC-V dev board
 
 [Kingston NV2 250G M.2 2280 NVMe Internal SSD](https://www.amazon.com/dp/B0BBWH7DBT) (optional, pick size to suit your application)
 
+# The Board
+
+![Vision Five 2 with heatsinks](vision_five_2_with_heatsinks.jpg "Vision Five 2 with heatsinks")
+Vision Five 2 with heatsinks
+
 # References
 
 [StarFive VisionFive 2 High Performance RISC-V SBC Review by James Chambers](https://jamesachambers.com/starfive-visionfive2-review/)
