@@ -61,7 +61,7 @@ Username: user
 Password: starfive
 ```
 
-Then [follow these directions to enable root](https://doc-en.rvspace.org/VisionFive2/Quick_Start_Guide/VisionFive2_QSG/enable_ssh_root_login.html).
+Note that `root` login may not work yet. [Follow these directions to enable root](https://doc-en.rvspace.org/VisionFive2/Quick_Start_Guide/VisionFive2_QSG/enable_ssh_root_login.html).
 
 After root is enabled, you can now also login as root:
 
