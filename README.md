@@ -31,9 +31,13 @@ Mount the VisionFive 2 card in the proto box using the nylon standoffs. Drill ho
 
 ## Flash SD Card
 
-Initially use the StarFive Debian OS image: [starfive-jh7110-VF2-VF2_515_v2.3.0-55.img.bz2](https://drive.google.com/file/d/14RDGjyUkyUKsowP7zH8E55Ym6FpuE899) .
+Initially use the `55` StarFive Debian OS image: [starfive-jh7110-VF2-VF2_515_v2.3.0-55.img.bz2](https://drive.google.com/file/d/14RDGjyUkyUKsowP7zH8E55Ym6FpuE899) .
 
-Use [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/) to flash the SD card (not Balena Etcher)
+Use [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/) to flash the above Debian OS image to the SD card.
+(The Balena Etcher did not work for me)
+
+For reference, here are [all the OS images](https://drive.google.com/drive/folders/1yhMVrB05wSjcqbrxgW2nXJNOeSC3ViRx) and
+the [main Debian StarFive page](https://debian.starfivetech.com/).
 
 ## Hardware connections
 
