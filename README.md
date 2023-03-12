@@ -16,7 +16,7 @@ but this size worked for me and was reasonably priced)
 but you can use metal if you're comfortable with that)
 
 [QILIPSU Junction Box with Mounting Plate 250x150x100mm, Clear Cover Plastic DIY Electrical Project Case IP67](https://www.amazon.com/dp/B07H5B9W5H) 
-(or pick one more appropriate for your setup)
+(or pick a box more appropriate for your setup)
 
 [65W/61W USB C Power Adapter, WEGWANG Type C Power Delivery PD Wall Charger 65W](https://www.amazon.com/dp/B07KXGXBL6) 
 (or equivalent)
@@ -76,6 +76,12 @@ After root is enabled, you can now also login as root:
 Username: root
 Password: starfive
 ```
+
+## Python
+
+First, [Install Python](https://cloudinfrastructureservices.co.uk/how-to-install-python-3-in-debian-11-10/) .
+
+Then enable venvs: `apt install python3.10-venv`
 
 # References
 
