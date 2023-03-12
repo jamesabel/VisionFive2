@@ -82,9 +82,15 @@ Password: starfive
 
 ## Python
 
-First, [Install Python](https://cloudinfrastructureservices.co.uk/how-to-install-python-3-in-debian-11-10/) .
+First, [Install Python](https://cloudinfrastructureservices.co.uk/how-to-install-python-3-in-debian-11-10/). 
+You probably only need to do this (as root):
 
-Then enable venvs: `apt install python3.10-venv`
+```shell
+apt update
+apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
+apt install python3 -y
+apt install python3-venv
+```
 
 ## Using the SSD
 
