@@ -31,6 +31,9 @@ but you can use metal if you're comfortable with that)
 ![Vision Five 2 with heatsinks](vision_five_2_with_heatsinks.jpg "Vision Five 2 with heatsinks")
 Vision Five 2 with heatsinks
 
+![](vision_five_2_with_ssd.jpg "Vision Five 2 with SSD") 
+Vision Five 2 with SSD installed
+
 # Initial Setup
 
 Mount the VisionFive 2 card in the proto box using the nylon standoffs. Drill holes in the proto box to allow for wires.
@@ -82,6 +85,11 @@ Password: starfive
 First, [Install Python](https://cloudinfrastructureservices.co.uk/how-to-install-python-3-in-debian-11-10/) .
 
 Then enable venvs: `apt install python3.10-venv`
+
+## Using the SSD
+
+If you installed the SSD (recommended), perform the steps given at [StarFive VisionFive 2 Official Debian SSD Boot Guide](https://jamesachambers.com/starfive-visionfive-2-debian-ssd-boot-guide/) 
+to enable it.
 
 # References
 
