@@ -97,6 +97,8 @@ apt install python3-venv
 If you installed the SSD (recommended), perform the steps given at [StarFive VisionFive 2 Official Debian SSD Boot Guide](https://jamesachambers.com/starfive-visionfive-2-debian-ssd-boot-guide/) 
 to enable it.
 
+Then [Increase Standard / Extend Root Partition Using fdisk](https://tekneed.com/increase-standard-extend-root-partition-using-fdisk/).
+
 # References
 
 ## Websites
