@@ -97,7 +97,43 @@ apt install python3-venv
 If you installed the SSD (recommended), perform the steps given at [StarFive VisionFive 2 Official Debian SSD Boot Guide](https://jamesachambers.com/starfive-visionfive-2-debian-ssd-boot-guide/) 
 to enable it.
 
-Then [Increase Standard / Extend Root Partition Using fdisk](https://tekneed.com/increase-standard-extend-root-partition-using-fdisk/).
+Note that your "disk" size will be whatever you started with when you booted from the SD card, which is probably smaller
+than you'd like and uses only part of your SSD. One option (what I currently used) is to create a new partition on the 
+SSD, format it, and mount it to some useful location (e.g., somewhere in your user directory). This way you can use 
+the additional disk space without having to expand the partition while you're running.
+
+I ended up with:
+
+```shell
+user@starfive:~/projects$ lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+mmcblk1     179:0    0  59.5G  0 disk
+|-mmcblk1p1 179:1    0    16M  0 part
+|-mmcblk1p2 179:2    0   100M  0 part
+`-mmcblk1p3 179:3    0  14.5G  0 part
+nvme0n1     259:0    0 232.9G  0 disk
+|-nvme0n1p1 259:1    0    16M  0 part
+|-nvme0n1p2 259:2    0   100M  0 part
+|-nvme0n1p3 259:3    0  14.5G  0 part /
+`-nvme0n1p4 259:4    0 218.2G  0 part /home/user/projects
+
+user@starfive:~/projects$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.7G     0  1.7G   0% /dev
+tmpfs           390M  1.7M  388M   1% /run
+/dev/nvme0n1p3   15G   12G  2.5G  83% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+/dev/nvme0n1p4  214G   20M  203G   1% /home/user/projects
+tmpfs           390M   28K  390M   1% /run/user/111
+tmpfs           390M   20K  390M   1% /run/user/0
+tmpfs           390M   24K  390M   1% /run/user/1000
+
+```
+
+While I used up 83% of my original "root" partition (e.g. for OS, etc.), I now have over 200GB ready for projects. 
+
+Perhaps someone will create a utility that automatically does the repartition, but this works for now.
 
 # References
 
